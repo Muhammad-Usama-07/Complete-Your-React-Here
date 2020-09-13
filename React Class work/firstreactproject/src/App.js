@@ -1,27 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
-    return ( <
-        div className = "App" >
-        <
-        header className = "App-header" >
-        <
-        img src = { logo }
-        className = "App-logo"
-        alt = "logo" / >
+// function App() {
+//     return ( <
+//         div className = "App" >
 
-        <
-        a className = "App-link"
-        href = "https://reactjs.org"
-        target = "_blank"
-        rel = "noopener noreferrer" >
-        Muhammad Usama <
-        /a> <
-        /header> <
-        /div>
-    );
+//         <
+//         h1 > Hello < /h1> < /
+//         div >
+//     );
+// }
+
+class App extends React.Component {
+    render() {
+        return ( <
+            div >
+            <
+            h1 > Hello Worl < /h1> <
+            /div>
+        )
+    }
 }
 
 export default App;

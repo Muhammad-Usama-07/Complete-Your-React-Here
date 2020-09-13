@@ -20,3 +20,5 @@ Question: Difference b/w npm and node
 5) Npm i react-bootstrap   (install bootstrap)
 
 6)    (kia render karwanaa hay(component), kaharender karwana hay)
+
+7) html in javscript (JSX)
