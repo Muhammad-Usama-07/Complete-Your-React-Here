@@ -1,0 +1,16 @@
+1) Three way data binding: it is a MVC(Model View Controller)View: 
+    							  Model: Data Layer
+				     			  Controller: Business logic layer
+2) React:
+   i.   Component Based model: Reuseibility of a component
+   ii.  it is a Libaray
+		Libarary		Framework
+	1) Flexibility		1) provide rule and ragulation(like angular)
+   iii. Reuseability(Called Declerative Approach)
+   iv.  Having only one single HTML page
+   v. node modules: react packages
+3) SPA and MPA
+	SPA: Single page Application
+		=>All pages render in one page
+	MPA: Multi/multiple page Apllication
+		=>each page will render again an again
