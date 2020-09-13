@@ -14,3 +14,9 @@
 		=>All pages render in one page
 	MPA: Multi/multiple page Apllication
 		=>each page will render again an again
+Question: Difference b/w npm and node
+
+4) everything will install will gous to node modules
+5) Npm i react-bootstrap   (install bootstrap)
+
+6)    (kia render karwanaa hay(component), kaharender karwana hay)
