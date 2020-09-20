@@ -13,10 +13,11 @@ import './App.css';
 
 class App extends React.Component {
     render() {
-        let name = "Usama";
+        let firstname = "Usama";
+        let lasttname = "Rajput";
         return ( 
             <div>
-            <h1> { name } < /h1> 
+            <h1> {`${firstname} ${lasttname}`} < /h1> 
             </div >
         )
     }
