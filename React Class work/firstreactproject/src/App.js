@@ -13,11 +13,11 @@ import './App.css';
 
 class App extends React.Component {
     render() {
-        return ( <
-            div >
-            <
-            h1 > Hello Worl < /h1> <
-            /div>
+        let name = "Usama";
+        return ( 
+            <div>
+            <h1> { name } < /h1> 
+            </div >
         )
     }
 }
