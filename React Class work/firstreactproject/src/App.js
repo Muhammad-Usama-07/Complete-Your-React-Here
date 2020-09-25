@@ -19,13 +19,16 @@ import './App.css';
 // ******************
 class App extends React.Component {
     render() {
-        let firstname = "Usama";
-        let lasttname = "Rajput";
-        let arr = [1, 2, 3, 4];
+        let todos = [{ text: "ghous" }, { text: "basit" }];
         return ( <
             div >
             <
-            /div >
+            ul > {
+                todos.map((item, index) => {
+                    console.log(item)
+                })
+            } <
+            /ul></div >
         )
     }
 }
