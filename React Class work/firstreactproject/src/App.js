@@ -25,7 +25,7 @@ class App extends React.Component {
             <
             ul > {
                 todos.map((item, index) => {
-                    console.log(item)
+                    return <li > { item.text } < /li>
                 })
             } <
             /ul></div >
