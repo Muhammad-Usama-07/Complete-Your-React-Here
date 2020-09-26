@@ -44,7 +44,7 @@ class App extends React.Component {
         return (
             <div> 
             <Header />
-            <h1>Main Component </h1>
+            <h1 style = {{backgroundColor: 'red'}}>Main Component </h1>
             
             {
                 /*<
