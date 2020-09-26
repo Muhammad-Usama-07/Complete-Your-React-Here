@@ -41,12 +41,11 @@ class Footer extends React.Component {
 
 class App extends React.Component {
     render() {
-        let todos = [{ text: "ghous" }, { text: "basit" }];
+       // let todos = [{ text: "ghous" }, { text: "basit" }];
         return (
             <div> 
-            <Header />
-            <h1 style = {{backgroundColor: 'red'}}>Main Component </h1>
-            <img src="https://www.aa.co.nz/assets/motoring/car-reviews/honda/civic/civic-ima-2012/_resampled/FillWyIxMjgwIiwiNzIwIl0/honda-civic-2012-1.JPG?m=1533799003" />
+            <h1 style = {{color: 'red'}}>Main Component </h1>
+            
             
             {
                 /*<
@@ -57,7 +56,6 @@ class App extends React.Component {
                             } <
                             /ul>*/
             } 
-            <Footer />
             </div >
         )
     }
