@@ -31,7 +31,7 @@ class Header extends React.Component {
 class Footer extends React.Component {
     render() {
         return ( 
-            <div>
+            <div className = "footer">
             <h1>A Footer </h1>
             </div>
         )
