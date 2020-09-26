@@ -1,6 +1,7 @@
 import React from 'react';
+
+import Header from './components/Header'
 import './App.css';
-import Header from './components/header';
 
 
 // Function Component
@@ -45,6 +46,7 @@ class App extends React.Component {
        // let todos = [{ text: "ghous" }, { text: "basit" }];
         return (
             <div> 
+                <Header />
             <h1 style = {{color: 'red'}}>Main Component </h1>
             
             
