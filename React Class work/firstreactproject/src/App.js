@@ -17,18 +17,34 @@ import './App.css';
 
 // Class Component
 // ******************
+
+class Header extends React.Component {
+    render() {
+        return ( 
+            <div>
+            <h1>A Header </h1>
+            </div>
+        )
+    }
+}
+
 class App extends React.Component {
     render() {
         let todos = [{ text: "ghous" }, { text: "basit" }];
-        return ( <
-            div >
-            <
-            ul > {
-                todos.map((item, index) => {
-                    return <li > { item.text } < /li>
-                })
-            } <
-            /ul></div >
+        return (
+            <div> 
+            <Header />
+            <h1>Main Component </h1>
+            
+            {
+                /*<
+                            ul > {
+                                todos.map((item, index) => {
+                                    return <li key = { index } > { item.text } < /li>
+                                })
+                            } <
+                            /ul>*/
+            } < /div >
         )
     }
 }
