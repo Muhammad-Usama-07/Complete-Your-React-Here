@@ -18,6 +18,7 @@ import './App.css';
 // Class Component
 // ******************
 
+/*
 class Header extends React.Component {
     render() {
         return ( 
@@ -36,7 +37,7 @@ class Footer extends React.Component {
             </div>
         )
     }
-}
+}*/
 
 class App extends React.Component {
     render() {
