@@ -50,6 +50,7 @@ class App extends React.Component {
             <div> 
                 <Header />
             <h1 style = {{color: 'red'}}>Main Component </h1>
+                <button type="button" className="btn btn-primary">Primary</button>
             
             
             {
