@@ -2,7 +2,8 @@ import React from 'react';
 
 
 import Header from './components/Header';
-import Footer from './components/Footer'
+import Footer from './components/Footer';
+import BasicTextFields from './components/TextField'
 import './App.css';
 
 
@@ -50,6 +51,9 @@ class App extends React.Component {
             <div> 
                 <Header />
             <h1 style = {{color: 'red'}}>Main Component </h1>
+                <br />
+                <BasicTextFields />
+                <br />
                 <button type="button" className="btn btn-primary">Primary</button>
             
             
