@@ -28,6 +28,16 @@ class Header extends React.Component {
     }
 }
 
+class Footer extends React.Component {
+    render() {
+        return ( 
+            <div>
+            <h1>A Footer </h1>
+            </div>
+        )
+    }
+}
+
 class App extends React.Component {
     render() {
         let todos = [{ text: "ghous" }, { text: "basit" }];
@@ -44,7 +54,9 @@ class App extends React.Component {
                                 })
                             } <
                             /ul>*/
-            } < /div >
+            } 
+            <Footer />
+            </div >
         )
     }
 }
