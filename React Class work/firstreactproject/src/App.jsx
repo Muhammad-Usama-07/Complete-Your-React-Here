@@ -45,6 +45,7 @@ class App extends React.Component {
             <div> 
             <Header />
             <h1 style = {{backgroundColor: 'red'}}>Main Component </h1>
+            <img src="https://www.aa.co.nz/assets/motoring/car-reviews/honda/civic/civic-ima-2012/_resampled/FillWyIxMjgwIiwiNzIwIl0/honda-civic-2012-1.JPG?m=1533799003" />
             
             {
                 /*<
