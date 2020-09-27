@@ -49,6 +49,7 @@ class App extends React.Component {
        // let todos = [{ text: "ghous" }, { text: "basit" }];
         return (
             <div> 
+                <Logo />
                 <Header />
             <h1 style = {{color: 'red'}}>Main Component </h1>
                 <br />

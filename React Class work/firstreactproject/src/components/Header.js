@@ -1,4 +1,6 @@
 import React from 'react';
+import car from '../images/photo-1542362567-b07e54358753.jpg'
+
 
 class Header extends React.Component{
     render(){
@@ -13,7 +15,7 @@ class Logo extends React.Component{
     render(){
         return(
             <div>
-                <img src = "" />
+                <img src = {car}  width="54px"/>
             </div>
         )
     }
