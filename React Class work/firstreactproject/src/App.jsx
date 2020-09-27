@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-import Header from './components/Header';
+import {Header,Logo} from './components/Header';
 import Footer from './components/Footer';
 import BasicTextFields from './components/TextField'
 import './App.css';

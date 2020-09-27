@@ -9,5 +9,16 @@ class Header extends React.Component{
         )
     }
 }
+class Logo extends React.Component{
+    render(){
+        return(
+            <div>
+                <img src = "" />
+            </div>
+        )
+    }
+}
 
-export default Header;
+export{
+    Header,Logo
+}   
