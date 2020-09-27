@@ -44,13 +44,22 @@ class Footer extends React.Component {
     }
 }*/
 
+
 class App extends React.Component {
+    constructor(){
+        super()
+        this.state = {
+            name: "ghous Ahmed",
+            email: "asas@gmail.com"
+        }
+    }
     render() {
        // let todos = [{ text: "ghous" }, { text: "basit" }];
         return (
             <div> 
                 <Logo />
                 <Header />
+                <h2>My name is {this.state.name}</h2>
             <h1 style = {{color: 'red'}}>Main Component </h1>
                 <br />
                 <BasicTextFields />
