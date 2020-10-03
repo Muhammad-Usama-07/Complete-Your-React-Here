@@ -55,6 +55,11 @@ class App extends React.Component {
     }
     
     set_name = () => {
+        this.setState({
+            name: "Umair"
+        })
+    }
+    get_name = () => {
         console.log(this.state.name)
     }
     render() {
@@ -67,6 +72,8 @@ class App extends React.Component {
                 <h4>My email is: {this.state.email}</h4>
                 <input type="text" placeholder= "Enter Value"></input>
                 <button onClick = {this.set_name}>set name</button>
+                <button onClick = {this.get_name}>get name</button>
+
             <h1 style = {{color: 'red'}}>Main Component </h1>
                 <br />
                 <BasicTextFields />
