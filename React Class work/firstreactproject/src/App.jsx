@@ -73,7 +73,7 @@ class App extends React.Component {
         return (
             <div> 
                 <Logo />
-                <Header page="Application Page" />
+                <Header name= {this.state.name} page="Application Page" />
                 <h2>My name is {this.state.name}</h2>
                 <h4>My email is: {this.state.email}</h4>
                 <input name="name" onChange = {(e) => this.handleChange(e)} type="text" placeholder= "name here"></input>
