@@ -53,6 +53,10 @@ class App extends React.Component {
             email: "asas@gmail.com"
         }
     }
+    
+    set_name = () => {
+        console.log(this.state.name)
+    }
     render() {
        // let todos = [{ text: "ghous" }, { text: "basit" }];
         return (
@@ -60,6 +64,9 @@ class App extends React.Component {
                 <Logo />
                 <Header />
                 <h2>My name is {this.state.name}</h2>
+                <h4>My email is: {this.state.email}</h4>
+                <input type="text" placeholder= "Enter Value"></input>
+                <button onClick = {this.set_name}>set name</button>
             <h1 style = {{color: 'red'}}>Main Component </h1>
                 <br />
                 <BasicTextFields />
