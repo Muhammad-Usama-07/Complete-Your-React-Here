@@ -68,12 +68,15 @@ class App extends React.Component {
             [e.target.name]: e.target.value
         })
     }
+    get_prop = (props) =>{
+
+    }
     render() {
        // let todos = [{ text: "ghous" }, { text: "basit" }];
         return (
             <div> 
                 <Logo />
-                <Header name= {this.state.name} email={this.state.email} page="Application Page" />
+                <Header get_prop = {this.get_prop} name= {this.state.name} email={this.state.email} page="Application Page" />
                 <h2>My name is {this.state.name}</h2>
                 <h4>My email is: {this.state.email}</h4>
                 <input name="name" onChange = {(e) => this.handleChange(e)} type="text" placeholder= "name here"></input>
