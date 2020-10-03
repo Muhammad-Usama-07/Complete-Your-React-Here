@@ -50,13 +50,14 @@ class App extends React.Component {
         super()
         this.state = {
             name: "ghous Ahmed",
-            email: "asas@gmail.com"
+            email: "asas@gmail.com",
+            value: ""
         }
     }
     
     set_name = () => {
         this.setState({
-            name: "Umair"
+            name: this.state.value
         })
     }
     get_name = () => {
@@ -70,7 +71,7 @@ class App extends React.Component {
                 <Header />
                 <h2>My name is {this.state.name}</h2>
                 <h4>My email is: {this.state.email}</h4>
-                <input onChange = {(e) => this.setState({name: e.target.value})} type="text" placeholder= "Enter Value"></input>
+                <input onChange = {(e) => this.setState({value: e.target.value})} type="text" placeholder= "Enter Value"></input>
                 <button onClick = {this.set_name}>set name</button>
                 <button onClick = {this.get_name}>get name</button>
 
