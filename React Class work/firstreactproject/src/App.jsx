@@ -63,8 +63,10 @@ class App extends React.Component {
     get_name = () => {
         console.log(this.state.name)
     }
-    handlechange(e){
-        console.log(e.target)
+    handleChange(e){
+        this.setState({
+            [e.target.name]: e.target.value
+        })
     }
     render() {
        // let todos = [{ text: "ghous" }, { text: "basit" }];
@@ -74,8 +76,8 @@ class App extends React.Component {
                 <Header />
                 <h2>My name is {this.state.name}</h2>
                 <h4>My email is: {this.state.email}</h4>
-                <input name="name" onChange = {(e) => this.handlechange(e)} type="text" placeholder= "Enter name"></input>
-                <input name="email" onChange = {(e) => this.handlechange(e)} type="text" placeholder= "Enter email"></input>
+                <input name="name" onChange = {(e) => this.handleChange(e)} type="text" placeholder= "Enter name"></input>
+                <input name="email" onChange = {(e) => this.handleChange(e)} type="text" placeholder= "Enter email"></input>
 
                 <button onClick = {this.set_name}>set name</button>
                 <button onClick = {this.get_name}>get name</button>
