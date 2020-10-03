@@ -4,6 +4,7 @@ import car from '../images/photo-1542362567-b07e54358753.jpg'
 
 class Header extends React.Component{
     render(){
+        console.log("props===", this.props)
         return(
              <nav className="navbar navbar-expand-lg navbar-light bg-light">
                     <a className="navbar-brand" href="#">Navbar</a>
