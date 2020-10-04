@@ -61,8 +61,12 @@ class App extends React.Component {
     }
     add_todo = () =>{
         this.state.todo.push(this.state.value)
+        // this.setState({
+        //     todo: this.state.todo
+        // })
         this.setState({
-            todo: this.state.todo
+            todo: [...this.state.todo, this.state.value],
+            value: ""
         })
     }
     
