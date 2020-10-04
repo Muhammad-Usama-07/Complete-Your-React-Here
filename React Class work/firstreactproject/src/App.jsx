@@ -53,6 +53,10 @@ class App extends React.Component {
         //     email: "asas@gmail.com",
         //     value: ""
         // }
+        this.state = {
+            todo: ["ghous", "ahmed", "omair"]
+        }
+        
     }
     
     // set_name = () => {
@@ -103,6 +107,13 @@ class App extends React.Component {
             // } 
             //     <Footer />
             // </div >
+            <div>
+                <ul>
+                    {this.state.todo.map((v,i) => {
+                        return <li>{v}</li>
+                    })}
+                </ul>
+            </div>
         )
     }
 }
