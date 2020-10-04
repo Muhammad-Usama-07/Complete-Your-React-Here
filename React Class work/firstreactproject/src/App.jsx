@@ -69,6 +69,12 @@ class App extends React.Component {
             value: ""
         })
     }
+    delete_todo = (index) =>{
+        this.state.todo.splice(index,1)
+        this.setState({
+            todo: this.state.todo
+        })
+    }
     
     // set_name = () => {
     //     this.setState({
@@ -124,7 +130,10 @@ class App extends React.Component {
                 <button onClick = {this.add_todo}>Add Item</button>
                 <ul>
                     {this.state.todo.map((v,i) => {
-                        return <li key = {i}>{v}</li>
+                        return <li key = {i}>{v} 
+                            <button onClick = {() => this.edit_todo(i)}>Edit</button>
+                            <button onClick = {() => this.delete_todo(i)}>Delete</button>
+                        </li>
                     })}
                 </ul>
             </div>
