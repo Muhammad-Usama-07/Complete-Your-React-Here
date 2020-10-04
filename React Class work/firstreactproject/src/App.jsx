@@ -48,11 +48,11 @@ class Footer extends React.Component {
 class App extends React.Component {
     constructor(){
         super()
-        this.state = {
-            name: "ghous Ahmed",
-            email: "asas@gmail.com",
-            value: ""
-        }
+        // this.state = {
+        //     name: "ghous Ahmed",
+        //     email: "asas@gmail.com",
+        //     value: ""
+        // }
     }
     
     // set_name = () => {
