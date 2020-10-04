@@ -59,6 +59,12 @@ class App extends React.Component {
         }
         
     }
+    add_todo = () =>{
+        this.state.todo.push(this.state.value)
+        this.setState({
+            todo: this.state.todo
+        })
+    }
     
     // set_name = () => {
     //     this.setState({
@@ -111,7 +117,7 @@ class App extends React.Component {
             // </div >
             <div>
                 <input value = {value} onChange = {(e) => this.setState({value: e.target.value})} type = "text" placeholder = "Enter Value"></input>
-                <button>Add Item</button>
+                <button onClick = {this.add_todo}>Add Item</button>
                 <ul>
                     {this.state.todo.map((v,i) => {
                         return <li key = {i}>{v}</li>
