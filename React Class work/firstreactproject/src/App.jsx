@@ -54,7 +54,8 @@ class App extends React.Component {
         //     value: ""
         // }
         this.state = {
-            todo: ["ghous", "ahmed", "omair"]
+            todo: ["ghous", "ahmed", "omair"],
+            value: ""
         }
         
     }
@@ -76,6 +77,7 @@ class App extends React.Component {
     //     console.log(props)
     // }
     render() {
+        let {todo, value} = this.state;
        // let todos = [{ text: "ghous" }, { text: "basit" }];
         return (
             // <div> 
@@ -108,9 +110,11 @@ class App extends React.Component {
             //     <Footer />
             // </div >
             <div>
+                <input value = {value} onChange = {(e) => this.setState({value: e.target.value})} type = "text" placeholder = "Enter Value"></input>
+                <button>Add Item</button>
                 <ul>
                     {this.state.todo.map((v,i) => {
-                        return <li>{v}</li>
+                        return <li key = {i}>{v}</li>
                     })}
                 </ul>
             </div>
