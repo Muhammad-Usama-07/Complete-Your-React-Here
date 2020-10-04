@@ -75,6 +75,14 @@ class App extends React.Component {
             todo: this.state.todo
         })
     }
+    edit_todo = (index) => {
+        var updated_value = prompt("Enter Value");
+        this.state.todo[index] = updated_value;
+         this.setState({
+            todo: this.state.todo
+        })
+        
+    }
     
     // set_name = () => {
     //     this.setState({
