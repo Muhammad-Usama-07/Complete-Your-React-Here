@@ -54,19 +54,19 @@ class App extends React.Component {
         //     value: ""
         // }
         this.state = {
-            todo: ["ghous", "ahmed", "omair"],
+            todo: [{title: "ghous"}, {title: "ahmed"}],
             value: ""
         }
         
     }
     add_todo = () =>{
-        this.state.todo.push(this.state.value)
         // this.setState({
         //     todo: this.state.todo
         // })
         this.setState({
+                // [taking old array item, giving new value]
             todo: [...this.state.todo, this.state.value],
-            value: ""
+            value: ''
         })
     }
     delete_todo = (index) =>{
@@ -138,7 +138,7 @@ class App extends React.Component {
                 <button onClick = {this.add_todo}>Add Item</button>
                 <ul>
                     {this.state.todo.map((v,i) => {
-                        return <li key = {i}>{v} 
+                        return <li key = {i}>
                             <button onClick = {() => this.edit_todo(i)}>Edit</button>
                             <button onClick = {() => this.delete_todo(i)}>Delete</button>
                         </li>
