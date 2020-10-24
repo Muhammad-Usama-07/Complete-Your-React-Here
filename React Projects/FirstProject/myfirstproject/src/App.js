@@ -4,7 +4,9 @@ import './App.css';
 class App extends Component {
     render(){
         return(
-            <div><h1>Nevbar</h1></div>
+            <div>
+            <h1>Nevbar</h1>
+            </div>
             
         )
     }
