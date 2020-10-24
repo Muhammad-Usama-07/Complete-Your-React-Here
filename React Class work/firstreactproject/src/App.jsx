@@ -76,11 +76,7 @@ class App extends React.Component {
         })
     }
     edit_todo = (index) => {
-        var updated_value = prompt("Enter Value");
-        this.state.todo[index] = updated_value;
-         this.setState({
-            todo: this.state.todo
-        })
+        console.log(index)
         
     }
     
@@ -133,12 +129,14 @@ class App extends React.Component {
             // } 
             //     <Footer />
             // </div >
+            
             <div>
                 <input value = {value} onChange = {(e) => this.setState({value: e.target.value})} type = "text" placeholder = "Enter Value"></input>
                 <button onClick = {this.add_todo}>Add Item</button>
                 <ul>
-                    {this.state.todo.map((v,i) => {
+                    {todo.map((v,i) => {
                         return <li key = {i}>
+                            {v}
                             <button onClick = {() => this.edit_todo(i)}>Edit</button>
                             <button onClick = {() => this.delete_todo(i)}>Delete</button>
                         </li>
