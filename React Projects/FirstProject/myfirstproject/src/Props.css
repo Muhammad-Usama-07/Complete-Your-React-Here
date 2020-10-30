@@ -51,6 +51,10 @@ h1, h2, h3, h4, h5, h6{
 .s24{font-size: 24px;}
 .s30{font-size: 30px;}
 
+.noul{text-decoration: none;}
+.noulh:hover{text-decoration: underline;}
+
+
 
 
 

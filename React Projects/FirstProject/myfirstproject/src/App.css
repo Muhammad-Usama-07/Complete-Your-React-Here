@@ -1,3 +1,4 @@
+.color{}
 .header{
     top: 0px;
     left: 0px;
@@ -20,7 +21,13 @@
 .header.search.query{}
 .header.search.go{}
 .header.search.goHovere{}
-.header.actions {}
+.header .actions{}
+.header .actions .a{}
+.header .actions .sell{}
+.header .actions .sell{}
+.header .actions .sell:hover{}
+
+
 
 
 

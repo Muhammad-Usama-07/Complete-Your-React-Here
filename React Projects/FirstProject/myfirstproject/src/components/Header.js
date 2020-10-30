@@ -1,7 +1,10 @@
 import React from 'react';
+import { Link ,BrowserRouter as Router } from "react-router-dom";
+
 
 function Header() {
     return ( 
+        <Router>
         <div className = "header fixed flex" >
             <div className = "logo" >
             <img src = { require("../Images/olxlogo.png") } />  
@@ -16,6 +19,7 @@ function Header() {
   
             </div>
             <div className="actions flex aic">
+                <Link to="/account/signin" className="fontb s15" />
                 <button className = "">
                     <div className = "icon-plus" />
                         <h2 className="s15 font">Sell</h2>
@@ -23,6 +27,7 @@ function Header() {
   
             </div>
         < /div>
+</Router>
     )
 }
 
