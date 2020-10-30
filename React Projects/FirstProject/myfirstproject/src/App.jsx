@@ -4,15 +4,13 @@ import {BrowserRouter, Route,Link} from 'react-router-dom'
 
 
 
-class App extends Component {
-    render(){
+function App() {
         return(
             <BrowserRouter>
                 <Route path = '/'></Route>
             </BrowserRouter>
             
-        )
-    }
+        );
   
 }
 
