@@ -1,9 +1,11 @@
 import React from 'react';
 
-function Header(){
-    return(
-        <div className= "header fixed flex">
-            <img src={require("../Images/olxlogo.svg")} />
+function Header() {
+    return ( 
+        <div className = "header fixed flex" >
+            <div className = "logo" >
+            <img src = { require("../Images/olxlogo.png") }/> 
+            </div> 
         </div>
     )
 }
